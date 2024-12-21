@@ -1,0 +1,50 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4" style="font-weight: bold; color: #4b358d;">Inscription à l'événement</h2>
+    
+    <div class="card p-4 shadow-lg">
+      <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+        
+        <div class="form-group mb-3">
+          <label for="nom" class="form-label">Nom</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nom"
+            name="nom"
+            [(ngModel)]="participant.nom"
+            required
+            placeholder="Entrez votre nom"
+          />
+        </div>
+        
+        <div class="form-group mb-3">
+          <label for="adresse" class="form-label">Adresse</label>
+          <input
+            type="text"
+            class="form-control"
+            id="adresse"
+            name="adresse"
+            [(ngModel)]="participant.adresse"
+            required
+            placeholder="Entrez votre adresse"
+          />
+        </div>
+    
+        <div class="form-group mb-3">
+          <label for="tel" class="form-label">Téléphone</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="tel"
+            name="tel"
+            [(ngModel)]="participant.tel"
+            required
+            placeholder="Entrez votre téléphone"
+          />
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-100 py-2">S'inscrire</button>
+      </form>
+    </div>
+  </div>
+  

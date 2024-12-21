@@ -1,0 +1,79 @@
+/* Style global pour le formulaire */
+.container {
+    max-width: 600px; /* Limite la largeur du formulaire */
+    margin-top: 50px;
+  }
+  
+  /* Titre du formulaire */
+  h2 {
+    font-family: 'Arial', sans-serif;
+    color: #4b358d; /* Bleu clair */
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  
+  /* Card contenant le formulaire */
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Formulaire et champs */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  input.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  input.form-control:focus {
+    border-color: #4b358d; /* Accentue la bordure au focus */
+    box-shadow: 0 0 5px rgba(75, 48, 156, 0.5);
+  }
+  
+  /* Placeholder */
+  input::placeholder {
+    color: #aaa; /* Couleur grise pour les placeholders */
+    font-style: italic;
+  }
+  
+  /* Bouton d'inscription */
+  button.btn {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    background-color: #4b358d;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button.btn:hover {
+    background-color: #4b358d; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+  }
+  
+  button.btn:focus {
+    outline: none;
+  }
+  
+  /* Marges */
+  .mt-5 {
+    margin-top: 50px;
+  }
+  
+  .mb-4, .mb-3 {
+    margin-bottom: 20px;
+  }
+  
